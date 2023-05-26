@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/pokeball.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite + TS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img class="site-logo" src="/assets/images/pokemon-logo.png" width="500" alt="Pokemon Logo">
+</header>
+<main class="page-container">
+    <nav>
+        <div id="pokemon_list"></div>
+        <div class="navigation-container">
+            <button id="to_previous_page">Previous</button>
+            <p><span id="current_range_pokemon"></span> of <span id="total_pokemon"></span></p>
+            <button id="to_next_page">Next</button>
+        </div>
+    </nav>
+    <section id="main_view"></section>
+</main>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
